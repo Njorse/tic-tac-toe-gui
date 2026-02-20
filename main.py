@@ -3,7 +3,8 @@ from tkinter import messagebox
 
 root = tk.Tk()
 root.title("Tic Tac Toe")
-root.geometry("300x350")
+root.geometry("320x400")
+root.config(bg="#1e1e1e")
 
 current_player = "X"
 buttons = []
@@ -29,20 +30,36 @@ def button_click(row, col):
     global current_player
     if buttons[row][col]["text"] == "":
         buttons[row][col]["text"] = current_player
+        buttons[row][col].config(fg="#00ffcc" if current_player == "X" else "#ff4d4d")
+
         if check_winner():
             messagebox.showinfo("Ganador", f"El jugador {current_player} ganó!")
             root.quit()
+
         current_player = "O" if current_player == "X" else "X"
 
-frame = tk.Frame(root)
+title = tk.Label(root, text="TIC TAC TOE",
+                 font=("Arial", 24, "bold"),
+                 bg="#1e1e1e",
+                 fg="white")
+title.pack(pady=20)
+
+frame = tk.Frame(root, bg="#1e1e1e")
 frame.pack()
 
 for row in range(3):
     row_buttons = []
     for col in range(3):
-        btn = tk.Button(frame, text="", width=8, height=4,
+        btn = tk.Button(frame,
+                        text="",
+                        width=6,
+                        height=3,
+                        font=("Arial", 20, "bold"),
+                        bg="#2d2d2d",
+                        fg="white",
+                        activebackground="#3e3e3e",
                         command=lambda r=row, c=col: button_click(r, c))
-        btn.grid(row=row, column=col)
+        btn.grid(row=row, column=col, padx=5, pady=5)
         row_buttons.append(btn)
     buttons.append(row_buttons)
 
