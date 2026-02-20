@@ -2,7 +2,7 @@ import tkinter as tk
 from tkinter import messagebox
 
 root = tk.Tk()
-root.title("Tic Tac Toe")
+root.title("Tic Tac Toe - Versión Principal")
 root.geometry("320x450")
 root.config(bg="#1e1e1e")
 
