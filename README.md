@@ -1,65 +1,74 @@
-🎮 Tic-Tac-Toe GUI en Python
-📌 Descripción
+🎮 Tic-Tac-Toe GUI
+Práctica avanzada de Git y GitHub
+📚 Información General
 
-Proyecto desarrollado como práctica integradora de Git y GitHub aplicando un flujo de trabajo profesional con ramas (Feature Branching), Pull Requests y resolución de conflictos.
+Curso: Herramientas de Desarrollo de Software / DevOps
 
-El proyecto consiste en un juego Tic-Tac-Toe (Tres en Raya) con interfaz gráfica desarrollada en Python usando Tkinter.
+Proyecto: Tic-Tac-Toe GUI en Python
 
-⚙️ Requisitos
+Tecnologías: Python 3, Tkinter, Git, GitHub
 
-Python 3.x
+🎯 Objetivo del Proyecto
 
-Git
+Aplicar un flujo de trabajo profesional utilizando Git y GitHub mediante:
 
-VS Code (opcional)
+Inicialización de repositorio local y remoto
 
-▶️ Instalación y ejecución
+Uso de ramas (Feature Branching)
 
-Clonar el repositorio:
+Creación de Pull Requests
 
-git clone https://github.com/Njorse/tic-tac-toe-gui.git
-
-Entrar a la carpeta:
-
-cd tic-tac-toe-gui
-
-Ejecutar el juego:
-
-python main.py
-🌿 Ramas utilizadas
-
-main → Rama principal
-
-feature-logic → Implementación de lógica de victoria
-
-feature-gui-styling → Mejora visual del juego
-
-feature-reset → Función para reiniciar el tablero
-
-conflicto-real → Simulación de conflicto
-
-🔀 Flujo de trabajo aplicado
-
-Inicialización de repositorio local
-
-Conexión con GitHub
-
-Desarrollo por ramas (Feature Branching)
-
-Pull Requests
-
-Merges controlados
+Integración de cambios
 
 Simulación y resolución manual de conflictos
 
-🖥 Funcionalidades
+🖥 Descripción del Juego
 
-✔ Detección automática de ganador
-✔ Diseño moderno con colores
-✔ Botón para reiniciar partida
-✔ Manejo profesional de versiones
+Aplicación de escritorio desarrollada en Python utilizando Tkinter que permite:
 
-👨‍💻 Autor
+✔ Jugar Tic-Tac-Toe (Tres en Raya)
 
-Proyecto académico – Práctica avanzada Git/GitHub
+✔ Detectar automáticamente al ganador
+
+✔ Mostrar interfaz moderna con colores personalizados
+
+✔ Reiniciar la partida sin cerrar la aplicación
+
+⚙️ Requisitos
+
+Python 3.x instalado
+
+Git instalado
+
+▶️ Instalación y Ejecución
+1️⃣ Clonar repositorio
+git clone https://github.com/Njorse/tic-tac-toe-gui.git
+2️⃣ Ingresar al proyecto
+cd tic-tac-toe-gui
+3️⃣ Ejecutar aplicación
+python main.py
+🌿 Ramas Implementadas
+Rama	Funcionalidad
+main	Rama principal
+feature-logic	Implementación de lógica de victoria
+feature-gui-styling	Mejora de diseño y estilos
+feature-reset	Función de reinicio del tablero
+conflicto-real	Simulación de conflicto
+🔀 Flujo de Trabajo Aplicado
+
+Inicialización con git init
+
+Conexión con repositorio remoto
+
+Desarrollo por ramas
+
+Pull Requests para integración
+
+Resolución manual de conflicto
+
+Documentación del proyecto
+
+👨‍💻Autor
+
+Práctica académica
 Instituto de Educación Superior KHIPU
