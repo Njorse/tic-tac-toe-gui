@@ -3,7 +3,7 @@ from tkinter import messagebox
 
 root = tk.Tk()
 root.title("Tic Tac Toe")
-root.geometry("320x400")
+root.geometry("320x450")
 root.config(bg="#1e1e1e")
 
 current_player = "X"
@@ -26,6 +26,13 @@ def check_winner():
 
     return False
 
+def reset_game():
+    global current_player
+    current_player = "X"
+    for row in buttons:
+        for button in row:
+            button.config(text="", fg="white")
+
 def button_click(row, col):
     global current_player
     if buttons[row][col]["text"] == "":
@@ -34,7 +41,8 @@ def button_click(row, col):
 
         if check_winner():
             messagebox.showinfo("Ganador", f"El jugador {current_player} ganó!")
-            root.quit()
+            reset_game()
+            return
 
         current_player = "O" if current_player == "X" else "X"
 
@@ -62,5 +70,14 @@ for row in range(3):
         btn.grid(row=row, column=col, padx=5, pady=5)
         row_buttons.append(btn)
     buttons.append(row_buttons)
+
+reset_button = tk.Button(root,
+                         text="Reiniciar Juego",
+                         font=("Arial", 14, "bold"),
+                         bg="#444",
+                         fg="white",
+                         command=reset_game)
+
+reset_button.pack(pady=20)
 
 root.mainloop()
