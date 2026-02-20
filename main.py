@@ -2,7 +2,11 @@ import tkinter as tk
 from tkinter import messagebox
 
 root = tk.Tk()
+<<<<<<< HEAD
 root.title("Tic Tac Toe - Rama B")
+=======
+root.title("Tic Tac Toe - Rama A")
+>>>>>>> conflicto-real
 root.geometry("320x450")
 root.config(bg="#1e1e1e")
 
